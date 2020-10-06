@@ -3,7 +3,7 @@
 // graph 1 starts here
 
 
-var overdosePromise= d3.csv("~/csv/petownershipData.csv")
+var overdosePromise= d3.csv("../csv/petownershipData.csv")
 
 
 
@@ -150,7 +150,7 @@ var drawLabels = function(graph,margins)
 //graph 2 starts here
 
 
-var ownershipPromise= d3.csv("~/csv/ownershipData.csv")
+var ownershipPromise= d3.csv("../csv/ownershipData.csv")
 
 
 
@@ -516,8 +516,8 @@ var failureFCN= function(error)
 {
     console.log("error", error);
 }
-var statePromise= d3.csv("~/csv/stateownership.csv")
-var geoPromise= d3.json("~/json/USstates.json")
+var statePromise= d3.csv("../csv/stateownership.csv")
+var geoPromise= d3.json("../json/USstates.json")
 var promises= [statePromise, geoPromise];
 Promise.all(promises)
 .then(successFCN, failureFCN);
