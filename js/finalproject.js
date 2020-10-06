@@ -172,7 +172,6 @@ var initGraph2= function (ownership)
     d3.select("#graph2")
         .attr("width", screen.width)
         .attr("height",screen.height)
-            .
     
     var target = d3.select("#graph2")
                 .append ("g")
